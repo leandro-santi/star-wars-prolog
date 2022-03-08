@@ -66,26 +66,24 @@ consult_jedi(Entrada, Resposta) :- jedi(Entrada, Resposta), jedi(Entrada), ! ; j
 
 % Master
 master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
-master('yoda', 'dookan').
+master('obi-wan', 'anakin').
+master('sidious', 'maul').
+master('plagueis', 'sidious').
+master('dookan', 'qui-gon jinn').
+master('qui-gon jinn', 'obi-wan').
+master('obi-wan', 'luke').
+master('yoda', 'luke').
 
 master('nao definido', 'nao definido', 'Eles não tem relação de Mestre e Aprendiz').
 
 master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
+master('obi-wan', 'anakin', 'Obi-wan Kenobi foi mestre de Anakin Skywalker antes dele se tornar Darth Vader').
+master('sidious', 'maul', 'Darth Sidious, também conhecido como senador Palpatine, treinou Darth Maul').
+master('plagueis', 'sidious', 'Darth Plagueis foi mestre de Darth Sidious até ser assasinado por seu aprendiz').
+master('dookan', 'qui-gon jinn', 'Dookan foi mestre de Qui-gon Jinn').
+master('qui-gon jinn', 'obi-wan', 'Qui-gon Jinn foi mestre de Obi-wan Kenobi').
+master('obi-wan', 'luke', 'Obi-wan Kenobi foi mentor de Luke Skywalker').
+master('yoda', 'luke', 'Yoda foi mentor de Luke Skywalker').
 
 consult_master(Mestre, Aprendiz, Resposta) :- master(Mestre, Aprendiz, Resposta), master(Mestre, Aprendiz), (jedi(Mestre); sith(Mestre)),  ! ; master('nao definido', 'nao definido', Resposta).
 
