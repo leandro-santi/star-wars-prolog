@@ -152,3 +152,32 @@ mandalorian('jango fett', 'Jango Fett era pai do grande caçador de recompensas 
 mandalorian('boba fett', 'O maior caçador de recompensas da galáxia').
 
 consult_mandalorian(Entrada, Resposta) :- mandalorian(Entrada, Resposta), mandalorian(Entrada), ! ; mandalorian('nao definido', Resposta).
+
+
+% Planets
+planet('alderaan').
+planet('corellia').
+planet('dagobah').
+planet('endor').
+planet('kamino').
+planet('moraband').
+planet('naboo').
+planet('tatooine').
+planet('coruscant').
+planet('hoth').
+
+
+planet('nao definido', 'Não conheço esse planeta').
+
+planet('alderaan', 'Alderaan, localizado nos Mundos do Núcleo, era um planeta terrestre coberto por montanhas. Durante as últimas décadas da República Galáctica, o planeta era governado pela Rainha Breha Organa e representada no Senado Galáctico por seu marido, Senador Bail Organa.').
+planet('corellia', 'Corellia era um planeta localizado nos Mundos do Núcleo. Era conhecido por seus excelentes pilotos e grandes naves estelares. Veículos como a Millennium Falcon e naves imperiais eram construídas em Corellia. Em algum ponto durante a era imperial, uma organização conhecida como a Resistência Corelliana operou no planeta, lutando contra o domínio do Império Galáctico. Um desses membros, Miru Nadrinakar, tentou avisá-los de uma repressão iminente. Corellia era o planeta natal de Han Solo, Wedge Antilles, Crix Madine, BoShek, Gadren, Dengar, Kalifa e Petro.').
+planet('dagobah', 'Dagobah era um Planeta no Sistema Dagobah, e um dos lugares mais puros da galáxia dentro da Força. Um mundo cheio de pântanos e de florestas, serviu como um exílio para o Grande Mestre Jedi Yoda após a destruição da Ordem Jedi. Durante seu exílio, Luke Skywalker conheceu os caminhos da Força, mais tarde ali mesmo em Dagobah Luke testemunhou a morte de Yoda, que se uniu com a Força.').
+planet('endor', 'Endor (também conhecida como Lua Florestal de Endor ou Lua Santuário) foi uma pequena lua florestal que orbitava o planeta da Orla Exterior de mesmo nome que foi o lar da espécie Ewok e Yuzzum.').
+planet('kamino', 'Kamino era um planeta aquático localizado em um sistema estelar extragaláctico que zanzava ao sul do Labirinto Rishi. Ele era habitado pelos Kaminoanos—uma raça de seres altos e elegantes que era considerada uma espécie misteriosa que tendia a se resguardar. Eles também eram conhecidos por sua tecnologia de clonagem que em última análise levou à criação do exército de clones da República Galáctica.').
+planet('moraband', 'Moraband, antigamente conhecido como Korriban, foi um planeta localizado nos Territórios da Orla Exterior e foi o lar dos Sith.').
+planet('naboo', 'Uma joia brilhante na Orla Média, Naboo tinha renome em toda a galáxia como um centro de paz e aprendizado. Suas belas cidades coexistiam em harmonia com as planícies gramadas e as colinas que as cercavam. O clima era temperado, e os predadores mais perigosos eram relegados, principalmente, ao peculiar núcleo aquático de Naboo. Ao contrário da maioria dos planetas que possuíam núcleos de lava, Naboo era vazado e preenchido com oceanos que correm em seu centro. E, nessas águas profundas, eram encontrados os ferozes Sando Aqua e Assassino Marítimo Opee.').
+planet('tatooine', 'Tatooine era um planeta desértico localizado nos Territórios da Orla Exterior. O planeta fazia parte de um sistema solar binário. Devido à falta de água superficial, muitos residentes do planeta drenavam água da atmosfera através de fazendas de umidade. Tatooine foi o terra natal de Anakin Skywalker, O Escolhido, e seu filho, Luke Skywalker. O antigo mestre de Anakin, Obi-Wan Kenobi, também morou no planeta depois das Guerras Clônicas, adotando o nome de Ben Kenobi. O Clã Hutt manteve uma presença em Tatooine também, com Jabba o Hutt tendo um palácio no deserto.').
+planet('coruscant', 'Coruscant foi um planeta que serviu como capital da República Galáctica e do Império Galáctico e como planeta natal da espécie humana.').
+planet('hoth', 'Hoth era um remoto planeta gelado, era o sexto de um sistema estelar de mesmo nome. Lá se localizava a Base Echo, sede temporária da Aliança Rebelde até que o Império Galáctico os encontrassem, dando início a um grande confronto conhecido como a Batalha de Hoth.').
+
+consult_planet(Entrada, Resposta) :- planet(Entrada, Resposta), planet(Entrada), ! ; planet('nao definido', Resposta).
