@@ -92,46 +92,30 @@ consult_master(Mestre, Aprendiz, Resposta) :- master(Mestre, Aprendiz, Resposta)
 
 % Father
 father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
-father('anakin', 'luke').
+father('anakin', 'leia').
+father('han solo', 'kylo ren').
 
 father('nao definido', 'nao definido', 'Eles não tem relação de Pai e Filho').
 
 father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
-father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
+father('anakin', 'leia', 'Anakin Skywalker é pai de Leia Skywalker').
+father('han solo', 'kylo ren', 'Han Solo é pai de Kylo Ren')..
 
 consult_father(Pai, Filho, Resposta) :- father(Pai, Filho, Resposta), father(Pai, Filho), ! ; father('nao definido', 'nao definido', Resposta).
 
 
 % Mother
 mother('padme', 'leia').
-mother('padme', 'leia').
-mother('padme', 'leia').
-mother('padme', 'leia').
-mother('padme', 'leia').
+mother('shmi', 'anakin').
+mother('padme', 'luke').
+mother('leia', 'kylo ren').
 
 mother('nao definido', 'nao definido', 'Eles não tem relação de Mãe e Filho').
 
 mother('padme', 'leia', 'Padme Amidala é mãe de Leia Skywalker').
-mother('padme', 'leia', 'Padme Amidala é mãe de Leia Skywalker').
-mother('padme', 'leia', 'Padme Amidala é mãe de Leia Skywalker').
-mother('padme', 'leia', 'Padme Amidala é mãe de Leia Skywalker').
-mother('padme', 'leia', 'Padme Amidala é mãe de Leia Skywalker').
+mother('shmi', 'anakin', 'Shmi Skywalker é mãe de Anakin Skywalker').
+mother('padme', 'luke', 'Padme Amidala é mãe de Luke Skywalker').
+mother('leia', 'kylo ren', 'Leia é mãe de Kylo Ren').
 
 consult_mother(Mae, Filho, Resposta) :- mother(Mae, Filho, Resposta), mother(Mae, Filho), ! ; mother('nao definido', 'nao definido', Resposta).
 
