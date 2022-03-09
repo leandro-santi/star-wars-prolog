@@ -2,6 +2,16 @@
 quote('nao definido', 'Não conheço uma citação desse personagem').
 
 quote('yoda', 'Faça ou não faça. A tentativa não existe.').
+quote('yoda', 'O medo é o caminho para o lado negro.').
+quote('yoda', 'Treine a si mesmo a deixar partir tudo que teme perder.').
+quote('yoda', 'Difícil de ver. Sempre em movimento está o Futuro.').
+quote('yoda', 'Que a Força esteja com você!').
+quote('yoda', 'O medo leva à raiva, a raiva leva ao ódio e o ódio leva ao sofrimento.').
+quote('obi-wan kenobi', 'Você faz aquilo que você acha que tem fazer.').
+quote('obi-wan kenobi', 'Quem é mais tolo? O tolo, ou o tolo que o segue?').
+quote('obi-wan kenobi', 'A Força pode ter firme influência sobre mentes fracas.').
+quote('obi-wan kenobi', 'A Força estará com você, sempre.').
+quote('obi-wan kenobi', 'Não deixe seus sentimentos pessoais atrapalharem seu caminho.').
 quote('obi-wan e anakin', 'Você era o escolhido. Foi dito que você iria destruir os Sith, não se unir a eles. Trazer o equilíbrio para a força, não jogá-la nas trevas.').
 quote('anakin skywalker', 'O maior problema do universo é que ninguém ajuda ninguém!').
 quote('darth vader', 'Sua falta de fé é perturbadora.').
@@ -27,6 +37,10 @@ sith('darth sidious').
 sith('darth nihilus').
 sith('darth maul').
 sith('darth vader').
+sith('sidious').
+sith('plagueis').
+sith('maul').
+sith('dookan').
 
 sith('nao definido', 'Não conheço este Lord Sith').
 
@@ -47,42 +61,44 @@ consult_sith(Entrada, Resposta) :- sith(Entrada, Resposta), sith(Entrada), ! ; s
 % Jedis
 jedi('yoda').
 jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
-jedi('obi-wan kenobi').
+jedi('anakin skywalker').
+jedi('mace windu').
+jedi('ahsoka tano').
+jedi('qui-gon jinn').
+jedi('revan').
 
 jedi('nao definido', 'Não conheço este Mestre Jedi').
 
-jedi('yoda', 'Yoda Grão mestre da Ordem Jedi durante as Guerras Clônicas').
-jedi('obi-wan kenobi', 'General Kenobi! Foi um grande Mestre Jedi que serviu a República Galáctica').
+jedi('yoda', 'Yoda, um membro de uma espécie desconhecida, foi um dos mais célebres e poderosos Mestres Jedi de todos os tempos, conhecido pela sua enorme sabedoria, conhecedor profundo da Força e habilidades em combates com sabre de luz, ele viveu por mais de 900 anos. Yoda foi um dos Grandes Mestres do Alto Conselho Jedi e seu Tempo durante os últimos séculos da República Galáctica e da Ordem Jedi lhe fizeram uma figura consequencial na história galáctica.').
+jedi('obi-wan kenobi', 'General Kenobi! Foi um grande Mestre Jedi que serviu a República Galáctica. Obi-Wan Kenobi, mais tarde conhecido também como Ben Kenobi durante seu exílio, foi um Humano Mestre Jedi que serviu à República Galáctica. Ele foi mentor de tanto de Anakin Skywalker quanto seu filho, Luke, treinando-os nos caminhos da Força.').
+jedi('anakin skywalker', 'Anakin Skywalker foi um Humano sensível à Força, que logo se tornou um Cavaleiro Jedi da República Galáctica ao ser considerado o Escolhido da Força. Durante as Guerras Clônicas, suas realizações como comandante no campo de batalha lhe proporcionaram o apelido de Herói Sem Medo. Depois de se voltar para o lado sombrio da Força, ele ficou conhecido como Darth Vader—Lorde Sombrio dos Sith e aprendiz do Imperador Darth Sidious. Como um Lorde Sith, Vader se voltou contra seus antigos companheiros e perseguiu os sobreviventes Jedi da Ordem 66 que quase extinguiu a ordem. Ele se tornou um executor do Império Galáctico, que trabalhou para esmagar a Aliança pela Restauração da República por se opor ao governo de seu Mestre Sith. No entanto, apesar de suas ações como Darth Vader, um vislumbre do lado luminoso da Força permaneceu no antigo Anakin Skywalker.').
+jedi('mace windu', 'Mace Windu era um Humano do sexo masculino, o segundo mais antigo Mestre Jedi durante os anos finais da República Galáctica, atrás apenas de Yoda. Foi Mestre Windu quem levou duzentos e doze Jedi até uma batalha em Geonosis onde matou o famoso Caçador de recompensas Jango Fett, levando o seu filho Boba Fett em odiar Mace Windu e até tentar mata-lo. Ele continuou a servir a República durante as Guerras Clônicas, muitas vezes levando muitas tropas para a batalha, mesmo com as dúvidas da militarização da Ordem Jedi.').
+jedi('ahsoka tano', 'Ahsoka Tano, apelidada "Abusada" por seu Mestre e também conhecida como "Ashla" depois das Guerras Clônicas, foi uma Padawan Jedi Togruta designada para ser aprendiz do Cavaleiro Jedi Anakin Skywalker pelo Mestre Jedi Yoda e, depois da guerra, ajudou a estabelecer uma rede de várias células rebeldes contra o Império Galáctico.').
+jedi('qui-gon jinn', 'Qui-Gon Jinn foi um Humano Mestre Jedi nascido em Coruscant durante os últimas décadas da República Galáctica. Treinado por Conde Dookan, Jinn foi considerado um dissidente dentro da Ordem Jedi, já que nem sempre seguia o Código Jedi; de acordo com seu Padawan, Obi-Wan Kenobi, Jinn poderia ter sido um membro do Alto Conselho Jedi se ele seguisse o código. Nos anos anteriores à sua morte, Jinn começou a estudar os segredos de consciência eterna depois da morte, tendo ele sido um estudante por muito tempo da Força Viva.').
+jedi('revan', 'Revan foi um Cavaleiro Jedi Humano que sucumbiu ao lado sombrio durante as Guerras Mandalorianas. Tendo grandes habilidades táticas, ele liderou a República Galáctica até a vitória sobre os Mandalorianos. Mas após a guerra, ele assumiu o título de "Lorde Negro dos Sith", fundando um poderoso Império Sith, e colocou suas forças contra a República, gerando o conflito conhecido como a Guerra Civil Jedi. A invasão eficiente e brutal de Darth Revan era parte de um plano para proteger a Galáxia de uma ameaça conhecida como os "Verdadeiros Sith".').
 
 consult_jedi(Entrada, Resposta) :- jedi(Entrada, Resposta), jedi(Entrada), ! ; jedi('nao definido', Resposta).
 
 
 % Master
 master('yoda', 'dookan').
-master('obi-wan', 'anakin').
+master('obi-wan kenobi', 'anakin').
 master('sidious', 'maul').
 master('plagueis', 'sidious').
 master('dookan', 'qui-gon jinn').
 master('qui-gon jinn', 'obi-wan').
-master('obi-wan', 'luke').
+master('obi-wan kenobi', 'luke').
 master('yoda', 'luke').
 
 master('nao definido', 'nao definido', 'Eles não tem relação de Mestre e Aprendiz').
 
 master('yoda', 'dookan', 'Yoda foi mestre de Conde Dookan antes dele se tornar um Lord Sith').
-master('obi-wan', 'anakin', 'Obi-wan Kenobi foi mestre de Anakin Skywalker antes dele se tornar Darth Vader').
+master('obi-wan kenobi', 'anakin', 'Obi-wan Kenobi foi mestre de Anakin Skywalker antes dele se tornar Darth Vader').
 master('sidious', 'maul', 'Darth Sidious, também conhecido como senador Palpatine, treinou Darth Maul').
 master('plagueis', 'sidious', 'Darth Plagueis foi mestre de Darth Sidious até ser assasinado por seu aprendiz').
 master('dookan', 'qui-gon jinn', 'Dookan foi mestre de Qui-gon Jinn').
 master('qui-gon jinn', 'obi-wan', 'Qui-gon Jinn foi mestre de Obi-wan Kenobi').
-master('obi-wan', 'luke', 'Obi-wan Kenobi foi mentor de Luke Skywalker').
+master('obi-wan kenobi', 'luke', 'Obi-wan Kenobi foi mentor de Luke Skywalker').
 master('yoda', 'luke', 'Yoda foi mentor de Luke Skywalker').
 
 consult_master(Mestre, Aprendiz, Resposta) :- master(Mestre, Aprendiz, Resposta), master(Mestre, Aprendiz), (jedi(Mestre); sith(Mestre)),  ! ; master('nao definido', 'nao definido', Resposta).
@@ -97,7 +113,7 @@ father('nao definido', 'nao definido', 'Eles não tem relação de Pai e Filho')
 
 father('anakin', 'luke', 'Anakin Skywalker é pai de Luke Skywalker').
 father('anakin', 'leia', 'Anakin Skywalker é pai de Leia Skywalker').
-father('han solo', 'kylo ren', 'Han Solo é pai de Kylo Ren')..
+father('han solo', 'kylo ren', 'Han Solo é pai de Kylo Ren').
 
 consult_father(Pai, Filho, Resposta) :- father(Pai, Filho, Resposta), father(Pai, Filho), ! ; father('nao definido', 'nao definido', Resposta).
 
@@ -121,17 +137,17 @@ consult_mother(Mae, Filho, Resposta) :- mother(Mae, Filho, Resposta), mother(Mae
 % Mandalorian
 mandalorian('boba fett').
 mandalorian('jango fett').
-mandalorian('boba fett').
-mandalorian('jango fett').
-mandalorian('boba fett').
+mandalorian('pre vizsla').
+mandalorian('bo-katan kryze').
+mandalorian('din djarin').
 
 mandalorian('nao definido', 'Não conheço esse mandaloriano').
 
-mandalorian('boba fett', 'O maior caçador de recompensas da galáxia').
-mandalorian('jango fett', 'Jango Fett era pai do grande caçador de recompensas Boba Fett').
-mandalorian('boba fett', 'O maior caçador de recompensas da galáxia').
-mandalorian('jango fett', 'Jango Fett era pai do grande caçador de recompensas Boba Fett').
-mandalorian('boba fett', 'O maior caçador de recompensas da galáxia').
+mandalorian('boba fett', 'O maior caçador de recompensas da galáxia. Boba Fett foi um clone inalterado de Jango Fett, um homem caçador de recompensas Mandaloriano que criou Boba como seu filho durante a Era da República. Fett imitou seu doador genético, a quem ele considerava seu pai, ao usar uma armadura Mandaloriana personalizada. Sua espaçonave pessoal era a Escravo I, uma nave de patrulha classe 31 Firespray-31 que pertenceu a Jango. Treinado em combate e habilidades marciais desde jovem, Fett foi um dos caçadores de recompensas mais temidos da galáxia durante a Era do Império. Ele se tornou uma lenda ao longo de sua carreira, que incluiu contratos para o Império Galáctico e o extenso submundo do crime.').
+mandalorian('jango fett', 'Jango Fett foi um caçador de recompensas Humano. Fett foi amplamente considerado o melhor caçador de recompensas da galáxia nos anos anteriores às Guerras Clônicas. Fett usava um conjunto de armaduras mandalorianas como um caçador de recompensas, embora ele fosse considerado um farsante pelo novo governo de Mandalore. Em algum momento antes das Guerras Clônicas, Fett foi recrutado pelo Lorde Sith Darth Sidious para ser o modelo genético dos soldados clone para o Grande Exército da República. Ao contrário de Fett, esses soldados não possuíam grande independência, pois foram concebidos para serem inteiramente leais à República Galáctica e sua causa. Fett tinha apenas um pedido para os Kaminoanos: um único clone inalterado que ele criaria como filho próprio, Boba Fett.').
+mandalorian('pre vizsla', 'Pre Vizsla foi um guerreiro Mandaloriano humano que liderou a organização terrorista conhecida como Olho da Morte nos últimos anos da República Galáctica. Anteriormente conhecido como governador de Concordia, Vizsla tinha a intenção de restaurar a herança guerreira de seu planeta natal, Mandalore, tomando o poder da Duquesa Satine Kryze e de seu governo pacifísta. Juntando o suporte de seus Mandalorian commandos [tradução necessária], Vizsla deu um golpe por poder duranto o conflito galáctico conhecido como as Guerras Clônicas, falhando várias vezes em seus esforços de conquista. Seguindo sua aliança falhada com a Confederação de Sistemas Independentes, por´m, Vizsla se uniu ao Sith renegado Maul e sua Sombra Coletiva. Como resultado de seu pacto, conseguiu conquistar Mandalore com um grande suporte público graças a Maul e sua ajuda.').
+mandalorian('bo-katan kryze', 'Bo-Katan Kryze foi uma humana Mandaloriana líder dos Corujas Noturnas e uma tenente do Olho da Morte, um grupo terrorista, e mais tarde, durante a Era do Império, se tornou Mandalor. Durante as Guerras Clônicas, a irmã de Kryze, Satine, governou como a Duquesa de Mandalore, e Kryze procurou desfazer seus ensinamentos pacifistas, acreditando que Mandalore deveria se orgulhar de sua história marcial.').
+mandalorian('din djarin', 'Din Djarin, vulgarmente conhecido como "o Mandaloriano" ou "Mando", era um Mandaloriano Humano que trabalhou como caçador de recompensas durante a Era da Nova República. Com sua armadura Mandaloriana e seu distinto capacete beskar, Djarin estava bem equipado e enigmático—um estranho cujo passado estava envolto em mistério para os outros. Órfão e criado como fundador, ele foi treinado para se tornar um guerreiro Mandaloriano e, eventualmente, ingressou na Tribo, que operava em Nevarro. Djarin ficou endurecido pela batalha, um homem de poucas palavras e um caçador formidável em uma galáxia cada vez mais perigosa.').
 
 consult_mandalorian(Entrada, Resposta) :- mandalorian(Entrada, Resposta), mandalorian(Entrada), ! ; mandalorian('nao definido', Resposta).
 
@@ -148,7 +164,6 @@ planet('tatooine').
 planet('coruscant').
 planet('hoth').
 
-
 planet('nao definido', 'Não conheço esse planeta').
 
 planet('alderaan', 'Alderaan, localizado nos Mundos do Núcleo, era um planeta terrestre coberto por montanhas. Durante as últimas décadas da República Galáctica, o planeta era governado pela Rainha Breha Organa e representada no Senado Galáctico por seu marido, Senador Bail Organa.').
@@ -163,3 +178,4 @@ planet('coruscant', 'Coruscant foi um planeta que serviu como capital da Repúbl
 planet('hoth', 'Hoth era um remoto planeta gelado, era o sexto de um sistema estelar de mesmo nome. Lá se localizava a Base Echo, sede temporária da Aliança Rebelde até que o Império Galáctico os encontrassem, dando início a um grande confronto conhecido como a Batalha de Hoth.').
 
 consult_planet(Entrada, Resposta) :- planet(Entrada, Resposta), planet(Entrada), ! ; planet('nao definido', Resposta).
+
